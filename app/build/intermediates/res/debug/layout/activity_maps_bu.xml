@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/googleMap"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"/><!-- From: file:/D:/zach/Android/project/Template/Android-master/GoogleMaps/app/src/main/res/layout/activity_maps_bu.xml -->

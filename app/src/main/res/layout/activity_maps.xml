@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/txtFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Dari" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Ke" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="searchAddress"/>
+	</LinearLayout>
+
+	<fragment android:id="@+id/map"
+	          android:name="com.google.android.gms.maps.SupportMapFragment"
+	          xmlns:android="http://schemas.android.com/apk/res/android"
+	          xmlns:map="http://schemas.android.com/apk/res-auto"
+	          xmlns:tools="http://schemas.android.com/tools"
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          tools:context="com.atommediastudio.googlemaps.MapsActivity"/>
+</LinearLayout>
